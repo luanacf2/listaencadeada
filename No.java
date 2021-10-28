@@ -6,39 +6,34 @@ public class No {
  
      public No(){
          informacao = 0;
-         proximo = null;
-         anterior = null;
+         proximo = null; //proximo e anterior servem para receber o endereço dos outros objetos//
+         anterior = null; //proximo e anterior servem para receber o endereço dos outros objetos//
      }
- 
-     public No(int informacao, No anterior, No proximo) {
-         this.informacao = informacao;
-         this.anterior = anterior;
-         this.proximo = proximo;
-     }
- 
+     
+     //Getter e setter
      public int getInf() {
          return informacao;
      }
- 
-     public void setInf(int informacao) {
-         this.informacao = informacao;
-     }
- 
+
      public No getAnt() {
-         return anterior;
-     }
- 
-     public void setAnt(No anterior) {
-         this.anterior = anterior;
+          return anterior;
      }
  
      public No getProx() {
-         return proximo;
+          return proximo;
      }
- 
+     
+     public void setInf(int informacao) {
+          this.informacao = informacao;
+      }
+
+     public void setAnt(No anterior) {
+         this.anterior = anterior;
+     }
+     
      public void setProx(No proximo) {
          this.proximo = proximo;
      }   
- 
+      
 }
  
